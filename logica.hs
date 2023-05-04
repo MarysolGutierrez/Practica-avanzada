@@ -5,8 +5,9 @@ nand False _ = True
 -- ---------------------------------------------------- 
 -- maj retorna True sii al menos 2 argumentos son True.
 -- ----------------------------------------------------
---maj :: Bool -> Bool -> Bool -> Bool
-
+maj :: Bool -> Bool -> Bool -> Bool
+maj x y z |(x==True && y==True) || (y==True && z==True) || (x==True && z==True) = True     
+          |otherwise= False
 
 -- ---------------------------------------------------- 
 -- Para las siguientes funciones se debe respetar el 
