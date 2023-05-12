@@ -73,3 +73,7 @@ productoria xs ys f= product [f x ys| x <- xs]
 --------------------------------------------------------
 contatoria :: [Int] -> [a] -> (Int -> [a] -> Bool) -> Int
 contatoria xs ys p = length [x | x <- xs, p x ys == True]
+
+
+
+--Agrego linea 79 para probar git xd
